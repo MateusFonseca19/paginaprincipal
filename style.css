@@ -1,0 +1,250 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/*inicio do cabecalho*/
+#header{
+    height: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: #15031f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    list-style-type: none;    
+}
+
+#menu li:hover{
+    position: static;
+    border-bottom: 2.5px solid white;
+    top: 10px;
+}
+
+#btn-igreja{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+.img-menu{
+    width: 38;
+    height: 38px;
+}
+
+.icone{
+    display: none;
+}
+/*fim do cabecalho*/
+
+/*inicio do rodapé*/
+footer{
+    background-color: #15031f;
+}
+
+#section-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-bottom: 1px solid white;
+}
+
+#logo-rodape{
+    height: 100px;
+}
+#section-lista{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.lista-rodape{
+    color: white;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+/*fim do rodapé*/
+
+/*Início dos Conteúdos da Página*/
+
+.line {
+    position: relative;
+    display: flex;
+    color: #15031f;
+    font-size: 1rem;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  .line::after {
+    content: "";
+    position: absolute;
+    border-radius: 5;
+    top: 35px;
+    width: 80%;
+    height: 2px;
+    left: 170px;
+    background: black;
+
+  } 
+/*Fim dos Conteúdos da Página*/
+
+/*inicio do MediqQuery 600px*/
+
+@media(max-width: 600px) {
+
+    .img-menu{
+        display: none;
+    }
+
+    #nav{
+        padding-left: 70%;
+       
+    }
+
+   
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto; 
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem .1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+        gap: .5rem;
+    }
+
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin-top: 5px;
+        transition: .5s;
+        position: relative;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 52px;
+        right: 0px;
+        background: #15031f;;
+        transition: .3s;
+        z-index: 1000;
+        height: 0x;
+        font-size: 16px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu ul{
+        padding-left: 10px;
+    }
+
+    #menu ul li {
+        width: 600px;
+        background: #0a010f;
+        margin-right: 5px;
+        padding: 0px; 
+        border-left: 1px solid rgb(236, 232, 232);  
+   }
+
+   #menu li a{
+
+    display: flex;
+    align-items: center;
+
+   }
+
+   #btn-igreja{
+       font-size: 16px;
+   }    
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }   
+
+    
+
+   #btigreja:hover{
+    background: none;
+}   
+
+    #subigreja {
+        display: none;
+        position: sticky;        
+    }
+
+    #submidia {
+        display: none;
+        position: sticky;        
+    }
+
+    .lista-rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 12px;
+        
+    }
+
+    .icone{
+        
+        display: flex;
+        width: 35px;
+        height: 35px;
+        padding-right: 0.3rem;
+    } 
+
+
+}
+
+/*Fim do MediqQuery 600px*/
