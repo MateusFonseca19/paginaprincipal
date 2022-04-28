@@ -86,26 +86,33 @@ footer{
 
 /*Início dos Conteúdos da Página*/
 
+main {    
+    min-width: 300px;
+    max-width: 1000px;
+    width: 85%;
+    margin: auto;
+}
+
+
 .line {
     position: relative;
     display: flex;
     color: #15031f;
     font-size: 1rem;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-  
-  .line::after {
+}
+
+.line::after {
     content: "";
     position: absolute;
-    border-radius: 5;
+    border-radius: 5px;
     top: 35px;
     width: 80%;
     height: 2px;
     left: 170px;
     background: black;
-
-  } 
+    min-width: 300px;
+    max-width: 1000px;
+  }
 /*Fim dos Conteúdos da Página*/
 
 /*inicio do MediqQuery 600px*/
@@ -177,7 +184,6 @@ footer{
         background: #15031f;;
         transition: .3s;
         z-index: 1000;
-        height: 0x;
         font-size: 16px;
         visibility: hidden;
         overflow-y: hidden;
@@ -188,7 +194,6 @@ footer{
     }
 
     #menu ul li {
-        width: 600px;
         background: #0a010f;
         margin-right: 5px;
         padding: 0px; 
@@ -242,6 +247,10 @@ footer{
         height: 35px;
         padding-right: 0.3rem;
     } 
+
+    .line::after {
+        display: none;
+    }
 
 
 }
