@@ -6,6 +6,7 @@ body{
 }
 /*inicio do cabecalho*/
 #header{
+    width: 100%;
     height: 70px;
     padding-right: 20px;
     padding-left: 20px;
