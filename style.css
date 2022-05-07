@@ -7,6 +7,7 @@ body{
 /*inicio do cabecalho*/
 #header{
     width: 100%;
+    min-width: 417px;
     height: 70px;
     padding-right: 20px;
     padding-left: 20px;
