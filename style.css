@@ -1,12 +1,11 @@
 body{
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     min-width: 320px;
     
 }
 /*inicio do cabecalho*/
 #header{
-    margin: auto;
     height: 70px;
     padding-right: 20px;
     padding-left: 20px;
@@ -16,6 +15,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#btn-mobile{
+    display: none;
 }
 
 #menu{
@@ -39,6 +42,10 @@ body{
     background: none;
     color: white;
     font-size: 18px;
+}
+
+#sub-igreja{
+    display: none;
 }
 
 #logo{
@@ -75,8 +82,7 @@ footer{
 }
 #section-lista{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .lista-rodape{
@@ -88,18 +94,33 @@ footer{
 
 /*Início dos Conteúdos da Página*/
 
-main {    
+main {
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 1280px;
     width: 85%;
     margin: auto;
 }
 
+#barra-noticias{
+    background: greenyellow;
+    min-width: 300px;
+    max-width: 1280px;
+}
+
+#nossos-estudos{
+    background: burlywood;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 4px;
+}
 
 .line {
     position: relative;
     display: flex;
-    color: #15031f;
+    color: white;
     font-size: 1rem;
 }
 
@@ -126,11 +147,11 @@ main {
     }
 
     #nav{
-        padding-left: 80%;
+        padding-left: 75%;
        
     }
 
-   
+  
     #nav.active #menu{
         height: calc(100vh - 70px);
         visibility: visible;
@@ -139,6 +160,7 @@ main {
 
     #btn-mobile{
         display: flex;
+        padding-left: 80%;
         padding: .5rem .1rem;
         font-size: 1rem;
         border: none;
