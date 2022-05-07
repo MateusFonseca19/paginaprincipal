@@ -141,7 +141,7 @@ main {
 
 /*inicio do MediqQuery 600px*/
 
-@media(max-width: 900px) {
+@media(max-width: 736px) {
 
     .img-menu{
         display: none;
@@ -149,7 +149,6 @@ main {
 
     #nav{
         padding-left: 75%;
-       
     }
 
   
